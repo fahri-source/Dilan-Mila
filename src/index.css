@@ -1,0 +1,510 @@
+/* ==========================================================================
+   1. IMPORT FONT & GLOBAL STYLE
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    height: auto;
+    padding-bottom: 100px;
+    font-size: 16px;
+    background-color: #fafafa;
+}
+.main-content {
+    width: 100%;
+    overflow: visible !important; /* Pastikan elemen di dalamnya bisa dibaca AOS */
+    position: relative;
+}
+
+.font-sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.font-esthetic {
+    font-family: 'Sacramento', cursive;
+}
+
+/* ==========================================================================
+   2. LOCKSCREEN / COVER PAGE (Halaman Pembuka)
+   ========================================================================== */
+.cover-page {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../public/assets/img/cover.webp') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    background-image:"";
+}
+
+.cover-image {
+    width: 220px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+}
+
+.cover-content h1 {
+    font-size: 4.5rem;
+    margin: 10px 0;
+}
+
+.guest-name {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #fbc2eb;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   3. HERO SECTION (Halaman Utama Atas)
+   ========================================================================== */
+.section-home {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../public/assets/img/cover.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.photo-frame {
+    width: 180px;
+    height: 240px;
+    border: 5px solid #fff;
+    background-color: #f8f9fa;
+    padding: 5px;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guest-name-home {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fbc2eb;
+    margin-top: 1rem;
+}
+
+/* ==========================================================================
+   4. NAVIGATION BAR FIXED-BOTTOM
+   ========================================================================== */
+.bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.4rem;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fbc2eb !important;
+}
+
+.music-toggle-container {
+    margin-top: -25px;
+    z-index: 1050;
+}
+
+.btn-music {
+    background-color: #fbc2eb;
+    color: #333;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.fa-spin, .bi-disc.fa-spin {
+    animation: spin 3s linear infinite;
+}
+
+/* ==========================================================================
+   5. SEKSI AL-QURAN
+   ========================================================================== */
+.section-quran {
+    color: #fff;
+    position: relative;
+    background: linear-gradient(rgba(251, 251, 251, 0.128), rgba(251, 251, 251, 0.128)), url('../public/assets/img/cover.webp') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 20px;
+}
+
+.arabic-text {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
+    font-family: serif;
+    direction: rtl;
+}
+
+.translation-text {
+    font-style: italic;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.6;
+}
+
+.surah-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ec39ba;
+}
+
+/* ==========================================================================
+   6. SEKSI MEMPELAI & ACARA (SAVE THE DATE)
+   ========================================================================== */
+section {
+    padding: 80px 0;
+}
+
+/* Zebra striping section */
+section:nth-of-type(even) {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+section:nth-of-type(odd) {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #fbc2eb;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.event-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(166, 193, 238, 0.3);
+    background: #ffffff;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card .card-title {
+    color: #a6c1ee;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.event-card p i {
+    color: #fbc2eb;
+}
+
+/* ==========================================================================
+   7. SEKSI GALERI FOTO
+   ========================================================================== */
+.gallery-item {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ==========================================================================
+   8. AMPLOP DIGITAL / HADIAH CAKRAWALA
+   ========================================================================== */
+.gift-card-v2 {
+    background: linear-gradient(135deg, #a6c1ee, #fbc2eb);
+    color: #333 !important;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(251, 194, 235, 0.4);
+    border: none;
+}
+
+.gift-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gift-logo {
+    max-height: 45px;
+    width: auto;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+}
+
+.gift-body hr {
+    border-color: rgba(255, 255, 255, 0.5);
+    margin: 1.5rem 0;
+}
+
+.gift-details {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.gift-item span {
+    font-size: 0.85rem;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.gift-item strong {
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.account-number span {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.account-number h4 {
+    font-weight: bold;
+    color: #111;
+    margin-top: 2px;
+}
+
+/* ==========================================================================
+   9. FOOTER SETTING
+   ========================================================================== */
+.footer {
+    background-color: #a6c1ee;
+    color: white;
+    padding: 40px 0 120px 0; /* padding bottom extra agar tidak tertutup navbar */
+    position: relative;
+    z-index: 1;
+}
+
+.footer-powered {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+}
+
+.footer img {
+    height: 28px;
+    width: auto;
+    margin: 0 8px;
+    transition: transform 0.2s;
+}
+
+.footer img:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   10. ANIMASI DASAR & KEADAAN UTAMA
+   ========================================================================== */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes love {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+.animate-love {
+    animation: love 4s ease-in-out infinite;
+}
+
+/* Karena menggunakan React State, animasi langsung aktif tanpa menunggu scroll-spy manual */
+.animate-up, .animate-left, .animate-right, .animate-zoom {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   11. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 768px) {
+    .cover-content h1 { font-size: 3.5rem; }
+    .guest-name { font-size: 1.5rem; }
+    .arabic-text { font-size: 1.5rem; line-height: 2.6rem; }
+}
+
+@media (max-width: 576px) {
+    body { font-size: 14px; }
+    .cover-content h1 { font-size: 2.8rem; }
+    .guest-name { font-size: 1.3rem; }
+    .display-1 { font-size: 3rem; }
+    .profile-pic { width: 160px; height: 160px; }
+    section { padding: 60px 15px; }
+    .gift-card-v2 { padding: 1.2rem; }
+}
+/* ==========================================================================
+   KENDALI GALERI 3D ROTATING CAROUSEL WITH SPACE BACKGROUND
+   ========================================================================== */
+
+/* Kontainer utama dengan efek kedalaman ruang 3D & Angkasa Gelap */
+.section-galeri-3d {
+    perspective: 1000px;
+    position: relative;
+    background: linear-gradient(to bottom, #020208 0%, #0b0b16 100%) !important;
+    overflow: hidden;
+}
+
+/* Lapisan Bintang Kecil */
+.section-galeri-3d::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    /* Perbaikan: Menghilangkan tanda # di depan rgba agar tidak error semi-colon */
+    box-shadow: 
+        10vw 20vh #fff, 25vw 10vh #fff, 40vw 35vh #fff, 60vw 15vh #fff, 85vw 25vh #fff,
+        5vw 55vh #fff, 20vw 75vh #fff, 50vw 60vh #fff, 70vw 80vh #fff, 90vw 45vh #fff,
+        15vw 40vh rgba(255,255,255,0.5), 35vw 85vh #fff, 55vw 20vh #fff, 80vw 70vh #fff,
+        95vw 10vh #fff, 30vw 50vh #fff, 65vw 45vh #fff, 75vw 5vh #fff, 12vw 90vh #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: kelipBintang 1s ease-in-out infinite alternate;
+}
+
+/* Lapisan Bintang Lebih Besar (Medium) */
+.section-galeri-3d::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 
+        18vw 15vh #fff, 32vw 28vh #fff, 53vw 8vh #fff, 68vw 38vh #fff, 88vw 63vh #fff,
+        8vw 68vh #fff, 23vw 88vh #fff, 48vw 72vh #fff, 73vw 52vh #fff, 92vw 83vh #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: kelipBintang 2.5s ease-in-out infinite alternate;
+    animation-delay: 1s;
+}
+
+/* Kotak Silinder tempat foto berbaris melingkar */
+.box-image-3d {
+    position: relative;
+    z-index: 5;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: putarGaleri3D 25s linear infinite; 
+}
+
+.box-image-3d:hover {
+    animation-play-state: paused;
+}
+
+/* Posisi foto di dalam silinder */
+.box-image-3d span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(450px);
+    -webkit-box-reflect: below 12px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.226));}
+
+.box-image-3d span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 15px 35px rgba(231, 231, 231, 0.488);
+}
+
+/* ==========================================================================
+   TIMELINE ANIMASI KELAP-KELIP & ROTASI
+   ========================================================================== */
+
+@keyframes kelipBintang {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+@keyframes putarGaleri3D {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+/* Responsif Layar HP */
+@media (max-width: 576px) {
+    .box-image-3d {
+        width: 130px;
+        height: 250px;
+        position: absolute;
+    }
+    .box-image-3d span {
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+    }
+}

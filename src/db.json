@@ -1,0 +1,62 @@
+{
+  "application": {
+    "name": "The Wedding of Arip & Wati",
+    "description": "Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami.",
+    "url": "https://fahri-source.github.io/arip-wati/"
+  },
+  "wedding": {
+    "tanggal": "2026-11-08T09:00:00",
+    "mempelai": {
+      "pria": {
+        "nama": "Dilan",
+        "namaLengkap": "Dilanda Putra",
+        "ortu": "Putra kelima dari keluarga Bapak Darsim & Ibu Napsiyah",
+        "instagram": "https://instagram.com/arip",
+        "foto": "public/assets/img/groom.webp"
+      },
+      "wanita": {
+        "nama": "Mila",
+        "namaLengkap": "Mila Kartika",
+        "ortu": "Putri ketiga dari keluarga Bapak Sukriyah & Ibu Suhesti",
+        "instagram": "https://instagram.com/wati",
+        "foto": "public/assets/img/bride.webp"
+      }
+    },
+    "akad": {
+      "tanggal": "Minggu, 08 November 2026",
+      "jam": "Acara akad telah selesai",
+      "lokasi": "Kediaman Mempelai Wanita",
+      "alamat": "Desa Leuwigede Blok Karangtengah Rt 07 Rw 04, Kec. Widasari, Kab. Indramayu"
+    },
+    "resepsi": {
+      "tanggal": "Minggu, 08 November 2026",
+      "jam": "09.00 WIB - Selesai",
+      "lokasi": "Kediaman Mempelai Wanita",
+      "alamat": "Desa Leuwigede Blok Karangtengah Rt 07 Rw 04, Kec. Widasari, Kab. Indramayu"
+    }
+  },
+  "galeri": [
+    "public/assets/img/galery1.webp",
+    "public/assets/img/galery2.webp",
+    "public/assets/img/galery3.webp",
+    "public/assets/img/galery1.webp",
+    "public/assets/img/galeri-01.webp",
+    "public/assets/img/galeri-02.webp",
+    "public/assets/img/galeri-03.webp",
+    "public/assets/img/galeri-04.webp"
+  ],
+  "gift": [
+    {
+      "provider": "BCA",
+      "nomor": "3030691721",
+      "nama": "Dilan",
+      "logo": "public/assets/img/BCA.webp"
+    },
+    {
+      "provider": "DANA",
+      "nomor": "08977445526",
+      "nama": "Mila",
+      "logo": "public/assets/img/OVO-LOGO.webp"
+    }
+  ]
+}
