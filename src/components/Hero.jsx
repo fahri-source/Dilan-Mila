@@ -27,7 +27,7 @@ function Hero({ pria, wanita, tamu, targetTanggal }) {
       <div className="container">
         <div className="animate-up">
           <div className="photo-frame">
-            <img src="/assets/cover.webp" alt="Foto Pasangan" />
+            <img src="/assets/img/cover.webp" alt="Foto Pasangan" />
           </div>
           <h4>The Wedding Of</h4>
           <h1 className="font-sacramento display-1">{pria} &amp; {wanita}</h1>
