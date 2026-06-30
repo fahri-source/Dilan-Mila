@@ -1,5 +1,6 @@
 {
   "application": {
+    "creator" : "fahri_source",
     "name": "The Wedding of Arip & Wati",
     "description": "Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami.",
     "url": "https://fahri-source.github.io/Dilan-Mila/"
@@ -12,14 +13,14 @@
         "namaLengkap": "Dilanda Putra",
         "ortu": "Putra kelima dari keluarga Bapak Darsim & Ibu Napsiyah",
         "instagram": "https://instagram.com/arip",
-        "foto": "public/assets/img/groom.webp"
+        "foto": "/public/assets/img/groom.webp"
       },
       "wanita": {
         "nama": "Mila",
         "namaLengkap": "Mila Kartika",
         "ortu": "Putri ketiga dari keluarga Bapak Sukriyah & Ibu Suhesti",
         "instagram": "https://instagram.com/wati",
-        "foto": "public/assets/img/bride.webp"
+        "foto": "/public/assets/img/bride.webp"
       }
     },
     "akad": {
@@ -36,27 +37,27 @@
     }
   },
   "galeri": [
-    "./public/assets/img/galery1.webp",
-    "./public/assets/img/galery2.webp",
-    "./public/assets/img/galery3.webp",
-    "./public/assets/img/galery1.webp",
-    "./public/assets/img/galeri-01.webp",
-    "./public/assets/img/galeri-02.webp",
-    "./public/assets/img/galeri-03.webp",
-    "./public/assets/img/galeri-04.webp"
+    "/public/assets/img/galery1.webp",
+    "/public/assets/img/galery2.webp",
+    "/public/assets/img/galery3.webp",
+    "/public/assets/img/galery1.webp",
+    "/public/assets/img/galeri-01.webp",
+    "/public/assets/img/galeri-02.webp",
+    "/public/assets/img/galeri-03.webp",
+    "/public/assets/img/galeri-04.webp"
   ],
   "gift": [
     {
       "provider": "BCA",
       "nomor": "3030691721",
       "nama": "Dilan",
-      "logo": "public/assets/img/BCA.webp"
+      "logo": "/public/assets/img/BCA.webp"
     },
     {
       "provider": "DANA",
       "nomor": "08977445526",
       "nama": "Mila",
-      "logo": "public/assets/img/OVO-LOGO.webp"
+      "logo": "/public/assets/img/OVO-LOGO.webp"
     }
   ]
 }
