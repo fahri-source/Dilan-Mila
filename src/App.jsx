@@ -82,7 +82,7 @@ const handleOpenInvitation = () => {
       {isOpen && (
         <main className="main-content">
           {/* Audio Element */}
-          <audio ref={audioRef} loop src="public/assets/audio/wedding.mp3" />
+          <audio ref={audioRef} loop src="/assets/audio/wedding.mp3" />
 
           {/* Fixed Bottom Navbar */}
           <nav className="navbar navbar-expand-lg fixed-bottom bg-dark-transparent">
