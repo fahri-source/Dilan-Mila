@@ -64,7 +64,7 @@ const handleOpenInvitation = () => {
       {!isOpen && (
         <div className="cover-page" id="coverPage">
           <div className="cover-content text-center">
-            <img src="public/assets/img/cover.webp" alt="Wedding Cover" className="cover-image" />
+            <img src="/public/assets/img/cover.webp" alt="Wedding Cover" className="cover-image" />
             <h4>The Wedding Of</h4>
             <h1 className="font-sacramento">
               {dataUndangan.wedding.mempelai.pria.nama} &amp; {dataUndangan.wedding.mempelai.wanita.nama}
