@@ -42,7 +42,7 @@
     "./public/assets/img/galery1.webp",
     "./public/assets/img/galeri-01.webp",
     "./public/assets/img/galeri-02.webp",
-    "/public/assets/img/galeri-03.webp",
+    "./public/assets/img/galeri-03.webp",
     "./public/assets/img/galeri-04.webp"
   ],
   "gift": [
