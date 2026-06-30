@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import jsconfigPaths from "vite-jsconfig-paths";
 import { VitePWA } from "vite-plugin-pwa";
+import react from '@vitejs/react-refresh' // atau @vitejs/plugin-
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -33,7 +34,7 @@ export default defineConfig({
         display: "standalone",
         icons: [
           {
-            src: "public/assets/img/favicon-logo.png",
+            src: "/assets/img/favicon-logo.png",
             sizes: "71x71",
           }
           // ... tambahkan sisa icon kamu di sini jika ada
